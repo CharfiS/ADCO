@@ -1,15 +1,9 @@
 """
-ADCO_confidence.py
-------------------
-Classification using the global rule base GR.
-For a given observation, activates matching rules per group
-and combines them using the chosen aggregation method.
+ADCO_confidence
+---------------
+Ensemble prediction using confidence-based aggregation strategies.
 
-Available aggregation methods (from ADCO_aggregation.py):
-    - "sum"      : sum of confidences (default)
-    - "max"      : maximum confidence
-    - "product"  : product of confidences
-    - "s_norm" : probabilistic t-conorm, stays in [0, 1]
+Code implementation was assisted by Claude (Anthropic, 2026) under the author's direction. All architectural decisions, scientific choices (attribute grouping strategy, confidence degree definition, aggregation methods), code and algorithmic corrections and validations were made by the author.
 """
 
 from ADCO_aggregation import aggregate

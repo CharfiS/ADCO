@@ -1,9 +1,9 @@
 """
-ADCO_one.py
------------
-Baseline method: trains a single CART decision tree on all attributes.
-Uses sklearn's built-in predict() for classification.
-Used to compare performance against the ADCO ensemble approach.
+ADCO_one
+--------
+Baseline method: single CART decision tree on all attributes.
+
+Code implementation was assisted by Claude (Anthropic, 2026) under the author's direction. All architectural decisions, scientific choices (attribute grouping strategy, confidence degree definition, aggregation methods), code and algorithmic corrections and validations were made by the author.
 """
 
 from utils import get_numeric_features

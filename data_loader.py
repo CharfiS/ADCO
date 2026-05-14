@@ -1,7 +1,9 @@
 """
-data_loader.py
---------------
-Handles dataset loading and train/test splitting.
+data_loader
+-----------
+Dataset loading and train/test splitting.
+
+Code implementation was assisted by Claude (Anthropic, 2026) under the author's direction. All architectural decisions, scientific choices (attribute grouping strategy, confidence degree definition, aggregation methods), code and algorithmic corrections and validations were made by the author.
 """
 
 import pandas as pd

@@ -1,9 +1,9 @@
 """
-ADCO_EM.py
-----------
-Ensemble Method based on Decision Trees (CART).
-Trains one decision tree per attribute group (via ADCO_tree)
-and builds the global rule base GR.
+ADCO_EM
+-------
+Ensemble method: one CART tree per attribute group.
+
+Code implementation was assisted by Claude (Anthropic, 2026) under the author's direction. All architectural decisions, scientific choices (attribute grouping strategy, confidence degree definition, aggregation methods), code and algorithmic corrections and validations were made by the author.
 """
 
 from ADCO_tree import train_tree, extract_rules

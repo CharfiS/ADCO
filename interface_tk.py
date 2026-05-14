@@ -1,9 +1,9 @@
 """
-interface_tk.py
----------------
-Tkinter graphical interface for ADCO.
-Displays attribute groups on the left and a comparative results table on the right.
-Supports multiple aggregation methods via checkboxes.
+interface_tk
+------------
+Desktop graphical interface (Tkinter).
+
+Code implementation was assisted by Claude (Anthropic, 2026) under the author's direction. All architectural decisions, scientific choices (attribute grouping strategy, confidence degree definition, aggregation methods), code and algorithmic corrections and validations were made by the author.
 """
 
 import tkinter as tk

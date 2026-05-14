@@ -1,17 +1,9 @@
 """
-ADCO_aggregation.py
--------------------
-Aggregation functions for combining confidence scores from multiple groups.
+ADCO_aggregation
+----------------
+Aggregation functions for combining confidence scores across groups.
 
-Each function takes a dict of {class: [confidence_from_G1, confidence_from_G2, ...]}
-and returns the predicted class.
-
-Available methods:
-    - sum_rule     : sum of confidences per class (Kittler et al., 1998)
-    - max_rule     : maximum confidence per class
-    - product_rule : product of confidences per class
-    - s_norm      : probabilistic s-norm (t-conorm) (a + b - a*b), stays in [0, 1]
-                     (Dubois & Prade, 1985)
+Code implementation was assisted by Claude (Anthropic, 2026) under the author's direction. All architectural decisions, scientific choices (attribute grouping strategy, confidence degree definition, aggregation methods), code and algorithmic corrections and validations were made by the author.
 """
 
 import math

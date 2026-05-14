@@ -1,12 +1,9 @@
 """
-utils.py
---------
-Algorithmic utilities shared across ADCO modules.
+utils
+-----
+Shared algorithmic utilities: feature selection, condition simplification.
 
-Contains:
-    - get_numeric_features() : extract numeric feature names from a DataFrame
-    - simplify_conditions()             : generic rule condition simplification
-    - simplify_conditions_cart()    : CART-specific wrapper around simplify_conditions()
+Code implementation was assisted by Claude (Anthropic, 2026) under the author's direction. All architectural decisions, scientific choices (attribute grouping strategy, confidence degree definition, aggregation methods), code and algorithmic corrections and validations were made by the author.
 """
 
 import numpy as np

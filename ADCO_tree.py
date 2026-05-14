@@ -1,8 +1,9 @@
 """
-ADCO_tree.py
-------------
+ADCO_tree
+---------
 Single CART decision tree: training and rule extraction.
-Used by both ADCO_EM (one tree per group) and ADCO_one (one tree on all attributes).
+
+Code implementation was assisted by Claude (Anthropic, 2026) under the author's direction. All architectural decisions, scientific choices (attribute grouping strategy, confidence degree definition, aggregation methods), code and algorithmic corrections and validations were made by the author.
 """
 
 from sklearn.tree import DecisionTreeClassifier, _tree

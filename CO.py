@@ -1,8 +1,9 @@
 """
-CO.py
------
-Attribute grouping using Pearson linear correlation (SIFCO method).
-Groups attributes whose absolute correlation exceeds the given threshold.
+CO
+--
+Attribute grouping via Pearson linear correlation (SIFCO method).
+
+Code implementation was assisted by Claude (Anthropic, 2026) under the author's direction. All architectural decisions, scientific choices (attribute grouping strategy, confidence degree definition, aggregation methods), code and algorithmic corrections and validations were made by the author.
 """
 
 import numpy as np
